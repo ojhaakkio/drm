@@ -1,4 +1,19 @@
-api_id = "20544260"
-api_hash = "a0b00461d3fba22aa186fa648d77787e"
-bot_token = "6940355682:AAEaTbv9tLz7ZKOEcMJ1HBioIP2goQOdQSY"
-sudo_groups = -1002051259332
+import os
+
+API_ID = API_ID = 20346550
+
+API_HASH = os.environ.get("API_HASH", "bc79c3bea7a626887bdc0871eecf0327")
+
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6949366970:AAGxoU9BqLUr3rHcyL3yKL2W7XPc8mMbMKk")
+
+PASS_DB = int(os.environ.get("PASS_DB", "721"))
+OWNER = int(os.environ.get("OWNER" ,"6381511858"))
+LOG =-1002070561493
+
+try:
+    ADMINS=[]
+    for x in (os.environ.get("ADMINS", "5665231556").split()):
+        ADMINS.append(int(x))
+except ValueError:
+        raise Exception("Your Admins list does not contain valid integers.")
+ADMINS.append(OWNER)
