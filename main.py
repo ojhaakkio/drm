@@ -42,10 +42,10 @@ from pyshorteners import Shortener
 botStartTime = time.time()
 batch = []
 bot = Client(
-    "bot",
-    api_id=api_id,
-    api_hash=api_hash,
-    bot_token=bot_token)
+ bot = Client("bot",
+             bot_token= "6949366970:AAGxoU9BqLUr3rHcyL3yKL2W7XPc8mMbMKk",
+             api_id=20346550,
+             api_hash= "bc79c3bea7a626887bdc0871eecf0327")
       
 @bot.on_message(filters.command(["start"]) & filters.chat(sudo_groups))
 async def start_handler(bot: Client, m: Message):
