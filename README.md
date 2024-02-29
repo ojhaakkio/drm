@@ -2,7 +2,7 @@
 
 ## Deploy To Heroku
 
-<a href="https://heroku.com/deploy?template=https://github.com/vishugt143/drm008">
+<a href="https://heroku.com/deploy?template=https://github.com/ojhaakkio/drm">
      <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
 
